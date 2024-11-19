@@ -3,6 +3,7 @@ site_name: JB Docs
 
 # Repository
 repo_url: https://github.com/jonasbirkelof/docs
+repo_name: jonasbirkelof/docs
 
 # Copyright
 copyright: Copyright &copy; 2023 - 2024 Jonas Birkel&#246;f
