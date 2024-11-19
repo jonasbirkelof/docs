@@ -69,4 +69,4 @@ Go to the UI and run the setup.
 
 ### Themes
 
-Download themes from https://linkstack.org/themes/ and upload them via the UI.
+Download themes from [https://linkstack.org/themes/](https://linkstack.org/themes/) and upload them via the UI.
