@@ -20,8 +20,6 @@ Reboot your PC.
 
 ## Edit Layout Modification
 
----
-
 <div class="steps" markdown>
 
 1. Open the file: 

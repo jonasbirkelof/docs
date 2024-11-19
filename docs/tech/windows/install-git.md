@@ -18,19 +18,19 @@ If you get a version number you have Git installed already.
 
 1. Download Git from the [official website](https://git-scm.com). 
 1. Run the .exe file and follow the installation prompts. See some important steps below.
-	1. Add a Git Bash profile to your terminal (optional).
+1. Add a Git Bash profile to your terminal (optional).
 
-		![](/assets/images/git-1.png)
+	![](/assets/images/git-1.png)
 
-	1. Select a default editor.
+1. Select a default editor.
 
-		![](/assets/images/git-2.png)
+	![](/assets/images/git-2.png)
 
-	1. Select if you want `master` to be the default branch or if you want something else, like `main`.
+1. Select if you want `master` to be the default branch or if you want something else, like `main`.
 
-		![](/assets/images/git-3.png)
+	![](/assets/images/git-3.png)
 
 
-	1. Keep the default settings for the following prompts and finish with **Install**.
+1. Keep the default settings for the following prompts and finish with **Install**.
 
 </div>

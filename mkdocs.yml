@@ -2,7 +2,7 @@
 site_name: JB Docs
 
 # Repository
-# -
+repo_url: https://github.com/jonasbirkelof/docs
 
 # Copyright
 copyright: Copyright &copy; 2023 - 2024 Jonas Birkel&#246;f
@@ -14,6 +14,8 @@ theme:
   logo: assets/images/jb_logo_col_transparent.svg
   logo_dark: assets/images/jb_logo_wht_transparent.svg
   favicon: assets/images/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -27,7 +29,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
-      accent: cyan
+      accent: red
       toggle:
         icon: fontawesome/regular/moon
         name: Switch to dark mode
@@ -36,7 +38,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: cyan
+      accent: red
       toggle:
         icon: fontawesome/regular/sun
         name: Switch to light mode
