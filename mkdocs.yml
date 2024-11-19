@@ -1,11 +1,6 @@
-# Project information
 site_name: JB Docs
-
-# Repository
 repo_url: https://github.com/jonasbirkelof/docs
 repo_name: jonasbirkelof/docs
-
-# Copyright
 copyright: Copyright &copy; 2023 - 2024 Jonas Birkel&#246;f
 
 # Configuration
@@ -17,16 +12,7 @@ theme:
   favicon: assets/images/favicon.ico
   icon:
     repo: fontawesome/brands/github
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
-    - navigation.top
-    - search.suggest
-    - content.code.copy
   palette:
-    # Light color scheme
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
@@ -34,8 +20,6 @@ theme:
       toggle:
         icon: fontawesome/regular/moon
         name: Switch to dark mode
-
-    # Dark color scheme
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -43,21 +27,25 @@ theme:
       toggle:
         icon: fontawesome/regular/sun
         name: Switch to light mode
-
-# Custom CSS
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - content.code.copy
 extra_css:
   - assets/stylesheets/custom.css
   - assets/stylesheets/steps.css
-
-# Plugins
 plugins:
   - search
   - glightbox:
        skip_classes:
          - skip-lightbox
-
-# Extensions
 markdown_extensions:
+  - toc:
+      permalink: true
   - attr_list
   - def_list
   - md_in_html
@@ -65,40 +53,25 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences:
-  - pymdownx.highlight:
-      extend_pygments_lang:
-        - name: php
-          lang: php
-          options:
-            startinline: true
-  - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-
-# Page tree
 # nav:
 #   # Home
 #   - Home:
 #     - Welcome: index.md
-
-#   # Tech
 #   - Tech:
 #     - Windows:
 #       - tech/windows/install-git-on-windows.md
 #       - tech/windows/edge-taskbar.md
-
-#   # Media
 #   - Media:
 #     - media/naruto-movies-episodes.md

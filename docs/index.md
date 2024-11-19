@@ -15,7 +15,7 @@ Welcome to my documentation site an knowledge database. On this site I will coll
 
 	Installation instructions, examples, templates and more.
 	
-	[Visit](/tech)
+	[Visit](./tech/index.md)
 
 - 	:fontawesome-solid-gamepad: **Gaming**
 
@@ -23,7 +23,7 @@ Welcome to my documentation site an knowledge database. On this site I will coll
 
 	Gaming articles, installation instructions and game servers.
 
-	[Visit](/gaming)
+	[Visit](./gaming/index.md)
 
 - 	:fontawesome-solid-clapperboard: **Media**
 
@@ -31,6 +31,6 @@ Welcome to my documentation site an knowledge database. On this site I will coll
 
 	Movie and TV-series information.
 
-	[Visit](/media)
+	[Visit](./media/index.md)
 
 </div>

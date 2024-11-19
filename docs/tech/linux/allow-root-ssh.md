@@ -16,15 +16,10 @@ This page will explain how to allow the root user to login via SSH.
 	sudo nano /etc/ssh/sshd_config
 	```
 
-1. Look for this line and remove the comment `#`:
+1. Look for the line that says `PermitRootLogin` and remove the comment `#`.
+1. By default, the value of `PermitRootLogin` is often set to `prohibit-password` or `no`. Change it to `yes` if you want to allow root login:
 
-	```bash
-	PermitRootLogin
-	```
-
-	By default, this is often set to `prohibit-password` or `no`. Change it to `yes` if you want to allow root login:
-
-	```bash
+	```bash title="sshd_config"
 	PermitRootLogin yes
 	```
  

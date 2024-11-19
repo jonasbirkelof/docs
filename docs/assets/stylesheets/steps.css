@@ -28,7 +28,6 @@
 }
 
 .md-typeset .steps > ol > li * {
-	margin-top: 0;
 	line-height: var(--line-height);
 }
 

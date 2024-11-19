@@ -36,12 +36,10 @@ This page will explain how to install Docker on Ubuntu. The following steps are 
 
 </div>
 
-!!! tip
+To not have to type `sudo` before every docker command, run this script and change `<USERNAME>` to your username:
 
-    To not have to type `sudo` before every docker command, run this script:
+```bash
+sudo usermod -aG docker <USERNAME>
+```
 
-    ```bash
-    sudo usermod -aG docker <USERNAME>
-    ```
-
-    Log out using `logout` and log 3in again for the changes to take effect.
+Log out using `logout` and log in again for the changes to take effect.

@@ -2,7 +2,7 @@
 title: Naruto Movies and Episodes
 ---
 
-![](/assets/images/naruto_by_xong_1943x971.jpg)
+![](../assets/images/naruto_by_xong_1943x971.jpg)
 
 This page lists all Naruto episodes and moves and explains which are manga canon, fillers and when in the series to watch the movies.
 

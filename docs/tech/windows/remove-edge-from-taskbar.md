@@ -2,7 +2,7 @@
 title: Remove Edge From the Taskbar
 ---
 
-![](/assets/images/ms-edge-ban.png)
+![](../../assets/images/ms-edge-ban.png)
 
 If Microsoft Edge is automaticlly pinned to the taskbar after rebooting the PC, even after removing it, try these steps.
 
@@ -22,15 +22,13 @@ Reboot your PC.
 
 <div class="steps" markdown>
 
-1. Open the file: 
+1. Open the file:
 
-    ```
-    %userprofile%\AppData\Local\Microsoft\Windows\Shell\LayoutModification.xml`.
-    ```
+    `%userprofile%\AppData\Local\Microsoft\Windows\Shell\LayoutModification.xml`
 
-1. Search for the follong line of code:
+1. Search for the following line of code and delete it:
 
-    ```xml
+    ```xml title="LayoutModification.xml"
     <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
     ```
 

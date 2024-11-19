@@ -2,14 +2,14 @@
 title: Install Starship
 ---
 
-Starship lets you custimize you command line tool with icons, colors, fonts and more. Starship works well together with [Windows Terminal](/tech/windows/install-windows-terminal).
+Starship lets you custimize you command line tool with icons, colors, fonts and more. Starship works well together with [Windows Terminal](./install-windows-terminal.md).
 
 - Official website: [https://starship.rs](https://starship.rs)
 - Tutorial by Christian Lempa: [https://www.youtube.com/watch?v=AK2JE2YsKto](https://www.youtube.com/watch?v=AK2JE2YsKto)
 
 ## Install Windows Terminal
 
-Download and install [Windows Terminal](/tech/windows/install-windows-terminal).
+Download and install [Windows Terminal](./install-windows-terminal.md).
 
 ```bash
 winget install --id Microsoft.WindowsTerminal -e
@@ -19,9 +19,9 @@ winget install --id Microsoft.WindowsTerminal -e
 
 To display symbols correctly, we need to install a "[Nerd Font](https://www.nerdfonts.com/)", for instance [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip). 
 
-Install it just like a normal font and set it as default in Windows Terminal. Refer to the [configuration documentation](/tech/windows/install-windows-terminal#configuration) for an example config file.
+Install it just like a normal font and set it as default in Windows Terminal. Refer to the [configuration documentation](./install-windows-terminal.md#configuration) for an example config file.
 
-```json
+```json title="settings.json"
 {
     "profiles": 
     {
@@ -48,7 +48,7 @@ winget install starship
 
 Create the file `C:\Users\<USERNAME>\.config\starship.toml`.
 
-[Example config file](https://github.com/jonasbirkelof/docs/files/starship/starship.toml)
+[Example config file](https://github.com/jonasbirkelof/docs/blob/master/files/starship/starship.toml)
 
 ## Initialize Starship
 
@@ -64,7 +64,7 @@ Create the file `C:\Users\<USERNAME>\.config\starship.toml`.
 
 1. Navigate to that folder and create the file `.bash_profile`.
 
-	```
+	```bash
 	cd c:\Users\<USERNAME>
 	```
 
@@ -74,13 +74,13 @@ Create the file `C:\Users\<USERNAME>\.config\starship.toml`.
 
 1. Add this code at the bottom of the file:
 
-	```
+	``` title=".bash_profile"
 	eval "$(starship init bash)"
 	```
 
-1. In Windows Terminal settings.json, add the following code under `profiles`:
+1. In Windows Terminal `settings.json`, add the following code under `profiles`:
 
-	```json
+	```json title="settings.json"
 	"list":
 	[
 		{
@@ -112,7 +112,7 @@ Create the file `C:\Users\<USERNAME>\.config\starship.toml`.
 Read more about file locations on the [documentation page](https://chrisant996.github.io/clink/clink.html#location-of-lua-scripts) if you experienses problems.
 1. Create the file `starship.lua` and add the following code:
 
-	```
+	``` title="starship.lua"
 	load(io.popen('starship init cmd'):read("*a"))()
 	```
 
@@ -130,7 +130,7 @@ Read more about file locations on the [documentation page](https://chrisant996.g
 
 1. Add the following code.
 
-	```bash
+	```bash title="Microsoft.PowerShell_profile.ps1"
 	Invoke-Expression (&starship init powershell)
 	```
 

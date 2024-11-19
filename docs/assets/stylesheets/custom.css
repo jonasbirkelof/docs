@@ -66,7 +66,7 @@ body[data-md-color-scheme='slate'] {
 }
 
 /* Inline code block */
-.md-typeset code {
+.md-typeset p code {
 	font-size: 85%;
 	padding: .2em .4em;
 	background-color: var(--inline-code-bg-color);

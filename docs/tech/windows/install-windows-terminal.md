@@ -31,7 +31,7 @@ winget install --id Microsoft.WindowsTerminal -e
 
 You can navigate to **Settings** via the tab menu or by pressing ++ctrl+comma++ . Here you can make the settings you want for Windows Terminal och you can click on **Open JSON file** at the bottom left to open the **settings.json** file.
 
-[Example config file](https://github.com/jonasbirkelof/jonasbirkelof.github.io/files/windows-terminal/windows-terminal-settings.json).
+[Example config file](https://github.com/jonasbirkelof/docs/blob/master/files/windows-terminal/windows-terminal-settings.json).
 
 You can set the individual shell icons. In the example config file you see what Icons I suggest, but feel free to download whatever you want.
 
@@ -39,4 +39,4 @@ You can set the individual shell icons. In the example config file you see what 
 
 ## Starship
 
-You can install [Starship](/tech/windows/install-starship) to get the most out of Windows Terminal by styling your command prompts with colors, fonts, symbols and more.
+You can install [Starship](./install-starship.md) to get the most out of Windows Terminal by styling your command prompts with colors, fonts, symbols and more.

@@ -1,5 +1,5 @@
 ---
-title: Mount a Windows drive
+title: Mount a Windows Drive
 ---
 
 This page explains how to mount a shared folder on Windows to Linux. Make sure that the folder you want to share from the PC is shared before you proceed.
