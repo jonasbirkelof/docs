@@ -42,7 +42,6 @@ volumes:
 ### Configuration
 
 - **Ports** - Select avaliable ports for the UI.
-
 - **Environment**
 
     - `TZ` - Set your local timezone.
