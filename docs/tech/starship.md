@@ -1,15 +1,15 @@
 ---
-title: Install Starship
+title: Starship
 ---
 
-Starship lets you custimize you command line tool with icons, colors, fonts and more. Starship works well together with [Windows Terminal](./install-windows-terminal.md).
+Starship lets you custimize you command line tool with icons, colors, fonts and more. Starship works well together with [Windows Terminal](./windows-terminal.md).
 
 - Official website: [https://starship.rs](https://starship.rs)
 - Tutorial by Christian Lempa: [https://www.youtube.com/watch?v=AK2JE2YsKto](https://www.youtube.com/watch?v=AK2JE2YsKto)
 
 ## Install Windows Terminal
 
-Download and install [Windows Terminal](./install-windows-terminal.md).
+Download and install [Windows Terminal](./windows-terminal.md).
 
 ```bash
 winget install --id Microsoft.WindowsTerminal -e
@@ -19,7 +19,7 @@ winget install --id Microsoft.WindowsTerminal -e
 
 To display symbols correctly, we need to install a "[Nerd Font](https://www.nerdfonts.com/)", for instance [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip). 
 
-Install it just like a normal font and set it as default in Windows Terminal. Refer to the [configuration documentation](./install-windows-terminal.md#configuration) for an example config file.
+Install it just like a normal font and set it as default in Windows Terminal. Refer to the [configuration documentation](./windows-terminal.md#configuration) for an example config file.
 
 ```json title="settings.json"
 {
@@ -48,7 +48,7 @@ winget install starship
 
 Create the file `C:\Users\<USERNAME>\.config\starship.toml`.
 
-[Example config file](https://github.com/jonasbirkelof/docs/blob/master/files/starship/starship.toml)
+[Example config file](../files/starship/starship.toml)
 
 ## Initialize Starship
 
@@ -110,6 +110,7 @@ Create the file `C:\Users\<USERNAME>\.config\starship.toml`.
 
 1. Open the scripts directory `C:\Users\<USERNAME>\AppData\Local\clink`. 
 Read more about file locations on the [documentation page](https://chrisant996.github.io/clink/clink.html#location-of-lua-scripts) if you experienses problems.
+
 1. Create the file `starship.lua` and add the following code:
 
 	``` title="starship.lua"

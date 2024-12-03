@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block fonts %}
+  <!-- Load fonts from Google -->
+  {% if config.theme.font != false %}
+    {% set text = config.theme.font.get("text", "Roboto") %}
+    {% set code = config.theme.font.get("code", "Roboto Mono") %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family={{
+        text | replace(' ', '+') + ':200,300,400,500,600,700,800,900%7C' +
+        code | replace(' ', '+') + ':400,400i,700,700i'
+      }}&display=fallback"
+    />
+    <style>
+      :root {
+        --md-text-font: "{{ text }}";
+        --md-code-font: "{{ code }}";
+      }
+    </style>
+  {% endif %}
+{% endblock %}

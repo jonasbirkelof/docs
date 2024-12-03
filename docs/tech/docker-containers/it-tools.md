@@ -14,7 +14,7 @@ In the server root directory, create a folder called `it-tools/`. `cd` into it a
 
 ## Docker Compose
 
-```yaml title="docker-compose-yml"
+```yaml title="docker-compose.yml" linenums="1"
 ---
 services:
   it-tools:

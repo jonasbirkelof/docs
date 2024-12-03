@@ -17,7 +17,7 @@ For instructions on how to use Glances as a widget on Homepage, please see [Setu
 
 ## Docker Compose
 
-```yaml title="docker-compose-yml"
+```yaml title="docker-compose.yml" linenums="1"
 ---
 services:
   glances:

@@ -1,15 +1,16 @@
 site_name: JB Docs
 repo_url: https://github.com/jonasbirkelof/docs
 repo_name: jonasbirkelof/docs
-copyright: Copyright &copy; 2023 - 2024 Jonas Birkel&#246;f
-
-# Configuration
+copyright: Copyright &copy; 2023 - 2024 Jonas Birkelöf
 theme:
   name: material
   custom_dir: docs/overrides/
   logo: assets/images/jb_logo_col_transparent.svg
   logo_dark: assets/images/jb_logo_wht_transparent.svg
   favicon: assets/images/favicon.ico
+  font:
+    text: Jost
+    code: Ubuntu Mono
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -18,19 +19,18 @@ theme:
       primary: white
       accent: red
       toggle:
-        icon: fontawesome/regular/moon
+        icon: octicons/moon-24
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: red
       toggle:
-        icon: fontawesome/regular/sun
+        icon: octicons/sun-24
         name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.sections
     - navigation.indexes
     - navigation.top
     - search.suggest
@@ -43,17 +43,14 @@ plugins:
   - glightbox:
        skip_classes:
          - skip-lightbox
+  - blog:
+      blog_toc: true
 markdown_extensions:
   - toc:
       permalink: true
   - attr_list
   - def_list
   - md_in_html
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.emoji:
@@ -65,13 +62,39 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-# nav:
-#   # Home
-#   - Home:
-#     - Welcome: index.md
-#   - Tech:
-#     - Windows:
-#       - tech/windows/install-git-on-windows.md
-#       - tech/windows/edge-taskbar.md
-#   - Media:
-#     - media/naruto-movies-episodes.md
+nav:
+  - Home:
+    - Welcome: index.md
+  - Tech:
+    - tech/index.md
+    - Docker:
+      - tech/mount-windows-folder-to-container.md
+    - Docker Containers:
+      - tech/docker-containers/glances.md
+      - tech/docker-containers/it-tools.md
+      - tech/docker-containers/linkstack.md
+      - tech/docker-containers/material-for-mkdocs.md
+    - General guides:
+      - Git and GitHub: 
+        - tech/git-and-github/index.md
+      - tech/material-for-mkdocs.md
+      - tech/mkdocs.md
+      - tech/python.md
+    - Linux:
+      - tech/allow-root-ssh.md
+      - tech/install-docker-on-ubuntu.md
+      - tech/mount-windows-drive.md
+      - tech/reset-root-password.md
+      - tech/set-static-ip.md
+    - Windows:
+      - tech/change-wsl2-password.md
+      - tech/remove-edge-from-taskbar.md
+      - tech/starship.md
+      - tech/windows-terminal.md
+  - Media:
+    - media/index.md
+    - media/naruto-movies-episodes.md
+  - Gaming:
+    - gaming/index.md
+  - Blog:
+    - blog/index.md

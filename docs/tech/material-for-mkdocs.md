@@ -10,7 +10,7 @@ Material for MkDocs is a documentation framework made for MkDocs and is build wi
 
 ## Prerequisites
 
-You will have to install Mkdocs with its dependencies before you can install Material for MkDocs. Follow this guide to [install MkDocs](mkdocs.md)
+You need have [Python and Pip](./python.md) installed.
 
 ## Installation
 
@@ -20,7 +20,7 @@ pip install mkdocs-material
 
 ## Docker
 
-If you want to develop or deploy the site using Docker, please follow [these instructions](../docker-containers/material-for-mkdocs.md) on how to do that.
+If you want to develop or deploy the site using Docker, please follow [these instructions](./docker-containers/material-for-mkdocs.md) on how to do that.
 
 ## File structure
 
@@ -48,14 +48,12 @@ my-site/
 └─ README.md
 ```
 
-## Usage
+## Create a new project
 
-### Create a new project
-
-`cd` in to the folder that you want to use as root, for example `my-site/`. The command below will create the `docs/` folder and `mkdocs.yml` inside that directory. 
+By running the `mkdocs new` command, a project folder will be created with the `mkdocs.yml` config file and default `index.md` file. `cd` into the folder where you want to place your project folder and then run the commant below to create a project named `my-project`.
 
 ```bash
-mkdocs new docs
+mkdocs new my-project
 ```
 
 ``` {.sh .no-copy}
@@ -65,10 +63,11 @@ my-site/
 └─ mkdocs.yml
 ```
 
-The following code is required for the site to work. Add it to `mkdocs.yml`:
+The following code is required for the site to work properly. Add it to `mkdocs.yml`:
 
-```yaml title="mkdocs.yml"
+```yaml title="mkdocs.yml" linenums="1"
 site_name: My Site
+site_url: https://mydomain.org/mysite
 theme:
   name: material
 ```
@@ -82,14 +81,6 @@ mkdocs serve
 Open the local instance on [http://localhost:8000/](http://localhost:8000/).
 
 Refer to the [Material for MkDocs documentation](https://squidfunk.github.io/mkdocs-material/) for setup and usage.
-
-### .gitignore
-
-If you have built your site into html and don't want to push that to your repo, you can add this line to you `.gitignore`:
-
-```title=".gitignore"
-/site
-```
 
 ## Deploy to GitHub Pages
 
@@ -108,7 +99,7 @@ my-site/
 
 Add the following code to `ci.yml`:
 
-```yaml title="ci.yml"
+```yaml title="ci.yml" linenums="1"
 name: ci 
 on:
   push:
@@ -150,6 +141,14 @@ jobs:
       - run: mkdocs gh-deploy --force
 ```
 
+### .gitignore
+
+If you have built your site into html and don't want to push that to your repo, you can add this line to you `.gitignore`:
+
+```title=".gitignore"
+/site
+```
+
 ### Make a GitHub repository
 
 Depending on how you want to access your website the repository name will differ. Your free GitHub Pages site will always start with the URL `<USERNAME>.github.io` and the site can be put in either that main site or in a subdomain like `<USERNAME>.github.io/docs`.
@@ -186,7 +185,7 @@ Now your site will be built and deployed to GitHub Pages using GitHub Actions. I
 
 Go to the repository **Settings** and **Pages**. Chose to deploy Pages from a branch and select `gh-pages`.
 
-![](../../assets/images/github-1.png)
+![GitHub Pages images](./images/github-pages-1.png)
 
 ### Custom domain
 

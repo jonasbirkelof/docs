@@ -2,7 +2,7 @@
 title: Remove Edge From the Taskbar
 ---
 
-![](../../assets/images/ms-edge-ban.png)
+![](./images/ms-edge-ban.png)
 
 If Microsoft Edge is automaticlly pinned to the taskbar after rebooting the PC, even after removing it, try these steps.
 
@@ -11,7 +11,9 @@ If Microsoft Edge is automaticlly pinned to the taskbar after rebooting the PC, 
 <div class="steps" markdown>
 
 1. Open Task Manager by right clicking on the start menu icon in the taskbar or by using the key combination ++ctrl+shift+esc++.
+
 2. Open the **Startup** tab.
+
 3. Right click on **Microsoft Edge** and select **Deactivate**.
 
 </div>

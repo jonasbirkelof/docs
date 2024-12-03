@@ -37,7 +37,7 @@ This page will explain how to set a static IP in Linux.
 	sudo nano 01-netcfg.yaml
 	```
 
-	```yaml title="01-netcfg.yml"
+	```yaml title="01-netcfg.yml" linenums="1"
 	network:
 	version: 2
 	ethernets:
