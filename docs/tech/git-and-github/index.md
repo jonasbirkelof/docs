@@ -163,13 +163,13 @@ These steps will assume that you only have a master branch in your repository.
 	git branch feature
 	```
 
-1. Checkout the new branch
+1. Checkout the new branch.
 
 	```bash
 	git checkout feature
 	```
 
-1. Check that you have changed branch
+1. Check that you have changed branch.
 
 	```bash
 	git branch
