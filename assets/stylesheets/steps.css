@@ -1,0 +1,71 @@
+:root {
+	--step-line-height: 1.6;
+
+	--step-circle-bg--light: rgba(210, 220, 230, 0.4);
+	--step-circle-bg--dark: rgba(255, 255, 255, .1);
+	--step-circle-color--light: var(--md-typeset-color);
+	--step-circle-color--dark: #ffffff;
+	--step-circle-font-weight: 400;
+	--step-circle-font-size: .6rem;
+	--step-circle-inset: calc(var(--step-circle-size) + .75rem);
+	--step-circle-margin: .365rem;
+	--step-circle-size: calc(var(--step-line-height) * .8rem);
+
+	--step-guide-color--light: rgba(0, 0, 0, .15);
+	--step-guide-color--dark: rgba(255, 255, 255, .15);
+	--step-guide-width: 1px;
+}
+
+/* List */
+.md-typeset .steps > ol {
+	margin-left: 0;
+	list-style: none;
+	counter-reset: steps-counter 0, 0;
+}
+.md-typeset .steps > ol > li {
+	counter-increment: steps-counter;
+	position: relative;
+	padding-inline-start: var(--step-circle-inset);
+	padding-bottom: 1px;
+	margin: 0;
+	min-height: calc(var(--step-circle-size) + var(--step-circle-margin));
+}
+
+/* Remove margin-top from the first paragraph of each step */
+.md-typeset .steps > ol > li > p:first-of-type {
+	margin-top: 0;
+}
+
+/* Circle */
+.md-typeset .steps > ol > li:before {
+	content: counter(steps-counter);
+	position: absolute;
+	top: 0;
+	inset-inline-start: 0;
+	width: var(--step-circle-size);
+	height: var(--step-circle-size);
+	line-height: var(--step-circle-size);
+	font-size: var(--step-circle-font-size);
+	font-weight: var(--step-circle-font-weight);
+	text-align: center;
+	border-radius: 99rem;
+	background-color: var(--step-circle-bg--light);
+}
+body[data-md-color-scheme='slate'] .md-typeset .steps > ol > li:before {
+	background-color: var(--step-circle-bg--dark);
+	color: var(--step-circle-color--dark);
+}
+
+/* Guide line */
+.md-typeset .steps > ol > li:after {
+	content: "";
+	position: absolute;
+	top: calc(var(--step-circle-size) + var(--step-circle-margin));
+	bottom: var(--step-circle-margin);
+	inset-inline-start: calc((var(--step-circle-size) - var(--step-guide-width)) / 2);
+	width: var(--step-guide-width);
+	background-color: var(--step-guide-color--light);
+}
+body[data-md-color-scheme='slate'] .md-typeset .steps > ol > li:after {
+	background-color: var(--step-guide-color--dark);
+}
