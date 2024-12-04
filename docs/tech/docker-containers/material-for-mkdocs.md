@@ -27,7 +27,7 @@ theme:
 
 ## Docker Compose
 
-```yaml title="docker-compose-yml" linenums="1"
+```yaml title="docker-compose.yml" linenums="1"
 ---
 services:
   mkdocs:
