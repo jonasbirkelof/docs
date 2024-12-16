@@ -74,6 +74,7 @@ nav:
       - tech/docker-containers/it-tools.md
       - tech/docker-containers/linkstack.md
       - tech/docker-containers/material-for-mkdocs.md
+      - tech/docker-containers/tududi.md
     - General guides:
       - Git and GitHub: 
         - tech/git-and-github/index.md
