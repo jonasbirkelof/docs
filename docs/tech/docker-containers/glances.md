@@ -4,6 +4,8 @@ title: Glances
 
 Glances is a monitoring tool that allows real-time monitoring of various aspects of your system such as CPU, memory, disk, network usage, running processes, logged in users, temperatures, voltages, fan speeds etc.
 
+![Glances screenshot](../images/glances-1.png)
+
 ## Resources
 
 - [GitHub](https://github.com/nicolargo/glances)

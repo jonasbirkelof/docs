@@ -4,6 +4,8 @@ title: IT-Tools
 
 Useful tools for developer and people working in IT.
 
+![IT-Tools screenshot](../images/it-tools-1.png)
+
 ## Resources
 
 - [https://github.com/CorentinTh/it-tools](https://github.com/CorentinTh/it-tools)

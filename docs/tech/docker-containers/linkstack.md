@@ -4,6 +4,8 @@ title: LinkStack
 
 LinkStack is a link sharing platform that is a free and open-source alternative to Linktree.
 
+![Linkstack screenshot](../images/linkstack-1.png)
+
 ## Resources
 
 - [LinkStack documentation](https://docs.linkstack.org)

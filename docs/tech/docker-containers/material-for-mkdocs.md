@@ -4,6 +4,8 @@ title: Material for MkDocs
 
 Material for MkDocs is a documentation framework made for MkDocs and is build with Python. It offers a lot of functionallity and customization to you project as well as easy deployment to Docker, GitHub Pages and GitLab Pages.
 
+![Material for MkDocs screenshot](../images/mkdocs-material-1.png)
+
 [Instructions on how to use and setup a local development environment](../material-for-mkdocs.md).
 
 ## Resources
