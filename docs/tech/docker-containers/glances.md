@@ -13,7 +13,7 @@ Glances is a monitoring tool that allows real-time monitoring of various aspects
 
 ## Prerequisites
 
-In the server root directory, create a folder called `glances`. `cd` into it and create the file `docker-compose.yml`.
+In the server root directory, create a folder called `glances/`. `cd` into it and create the file `docker-compose.yml`.
 
 For instructions on how to use Glances as a widget on Homepage, please see [Setup on Homepage]() (To do...)
 

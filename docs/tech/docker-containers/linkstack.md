@@ -12,7 +12,7 @@ LinkStack is a link sharing platform that is a free and open-source alternative 
 
 ## Prerequisites
 
-In the server root directory, create a folder called `linkstack`. `cd` into it and create the file `docker-compose.yml`.
+In the server root directory, create a folder called `linkstack/`. `cd` into it and create the file `docker-compose.yml`.
 
 ## Docker Compose
 

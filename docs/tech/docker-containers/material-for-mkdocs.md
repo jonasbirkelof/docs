@@ -14,7 +14,7 @@ Material for MkDocs is a documentation framework made for MkDocs and is build wi
 
 ## Prerequisites
 
-In the server root directory, create a folder called `my-site`. `cd` into it and create the files `docker-compose.yml`, `Dockerfile`, `mkdocs.yml` and the folder `docs/`.
+In the server root directory, create a folder called `my-site/`. `cd` into it and create the files `docker-compose.yml`, `Dockerfile`, `mkdocs.yml` and the folder `docs/`.
 
 If you will be running Docker on WSL2 on Windows and use that as your server, the `my-site/` folder can be created where it is appropriate, for instance: `C:\prod\my-site`.
 

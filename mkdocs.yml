@@ -53,6 +53,12 @@ markdown_extensions:
   - md_in_html
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.highlight:
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -72,6 +78,7 @@ nav:
     - Docker Containers:
       - tech/docker-containers/glances.md
       - tech/docker-containers/it-tools.md
+      - tech/docker-containers/leantime.md
       - tech/docker-containers/linkstack.md
       - tech/docker-containers/material-for-mkdocs.md
       - tech/docker-containers/tududi.md
