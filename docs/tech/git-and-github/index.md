@@ -149,6 +149,28 @@ git -v
 
 </div>
 
+## Cloning
+
+To clone a repo, you need the url to the repo:
+
+```bash
+git clone <url>
+```
+
+```bash
+git clone https://github.com/jonasbirkelof/beets-php
+```
+
+To clone a specific branch from the project, you add the branch flag:
+
+```bash
+git clone <url> -b <branch> --single-branch [<folder>]
+```
+
+```bash
+git clone https://github.com/jonasbirkelof/beets-php -b dev --single-branch
+```
+
 ## Branches
 
 Using branches is helpful when you want to edit your code without your main or production being affected before you are done. For example, if you want to create a new feature, you will create a feature branch, push your code to that branch and when you are done you will make a "pull request" and merge your code in the feature branch with the code in your master branch.

@@ -84,6 +84,7 @@ nav:
       - tech/docker-containers/material-for-mkdocs.md
       - tech/docker-containers/tududi.md
     - General guides:
+      - tech/firefox-backspace.md
       - Git and GitHub: 
         - tech/git-and-github/index.md
       - tech/material-for-mkdocs.md
