@@ -22,9 +22,9 @@ his page lists all Bleach episodes and movies and explains which are manga canon
 
 ## Movies
 
-| Movie                                        | Watch after episode |
-| -------------------------------------------- | ------------------- |
-| Bleach: Memories of Nobody (2006)                   | Either right after episode 63, or between episodes 109 and 110 if you aren't skipping filler. Doesn't matter which. You can also watch OVA 2 The Sealed Sword Frenzy here.                 |
-| Bleach: The DiamondDust Rebellion (2007)           | Fits best after episode 127, but before 138.                   |
-| Bleach: Fade to Black (2008) | Fits right after movie 2. However, you should wait until after episode 219 to avoid spoilers for that episode                 |
-| Bleach: The Hell Verse (2010)   | There's nowhere in the story it really makes sense, but it's best to watch it immediately after episode 299 (the prequel for the movie). But you can watch episode 299 (and the movie) any time between 272 and 342.                 |
+| Movie                                    | Watch after episode                                                                                         |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Bleach: Memories of Nobody (2006)        | 63 or between 109 and 110                                                                                   |
+| Bleach: The DiamondDust Rebellion (2007) | 127 (but before 138)                                                                                        |
+| Bleach: Fade to Black (2008)             | After movie 2 but after episode 219                                                                         |
+| Bleach: The Hell Verse (2010)            | Doesn't matter but after episode 299 (you can watch episode 299 and the movie between episodes 272 and 342) |
