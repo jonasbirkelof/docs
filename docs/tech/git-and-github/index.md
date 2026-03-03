@@ -58,7 +58,7 @@ git -v
 
 	![Git installation image](./images/git-2.png)
 
-1. Select if you want `master` to be the default branch or if you want something else, like `main`.
+1. Select `main` to be the default branch. `master` as name is a depricated.
 
 	![Git installation image](./images/git-3.png)
 
@@ -83,7 +83,7 @@ git -v
 	git init
 	```
 
-	A hidden `.git` folder has now been created in your project that is now treated as a local repository with it's own master branch. The folder contains config files and Git data.
+	A hidden `.git` folder has now been created in your project that is now treated as a local repository with it's own main branch. The folder contains config files and Git data.
 
 1. Connect the remote repository to your local repository.
 
@@ -103,7 +103,7 @@ git -v
 	git status
 	```
 
-	If you don't have any files in your project, create a file called `README.md` in the project root and push that to the repository. If you later want to push your code to a new branch in the repository, you must first push something to the master branch as it can't be empty.
+	If you don't have any files in your project, create a file called `README.md` in the project root and push that to the repository. If you later want to push your code to a new branch in the repository, you must first push something to the main branch as it can't be empty.
 
 	??? note "Example file"
 
@@ -125,15 +125,15 @@ git -v
 	git commit -m "First commit"
 	```
 
-1. You can now push your code to the remote repository on GitHub for example. The command below will push your code to the master branch.
+1. You can now push your code to the remote repository on GitHub for example. The command below will push your code to the main branch.
 
 	```bash
-	git push -u origin master
+	git push -u origin main
 	```
 
 	!!! warning "Push to another branch"
 
-		The master branch must have content before you can push to another branch - it can't be empty. As long as the master branch is not empty, you can push like normal:
+		The main branch must have content before you can push to another branch - it can't be empty. As long as the main branch is not empty, you can push like normal:
 
 		```bash
 		git push -u origin dev
@@ -173,9 +173,9 @@ git clone https://github.com/jonasbirkelof/beets-php -b dev --single-branch
 
 ## Branches
 
-Using branches is helpful when you want to edit your code without your main or production being affected before you are done. For example, if you want to create a new feature, you will create a feature branch, push your code to that branch and when you are done you will make a "pull request" and merge your code in the feature branch with the code in your master branch.
+Using branches is helpful when you want to edit your code without your main or production being affected before you are done. For example, if you want to create a new feature, you will create a feature branch, push your code to that branch and when you are done you will make a "pull request" and merge your code in the feature branch with the code in your main branch.
 
-These steps will assume that you only have a master branch in your repository.
+These steps will assume that you only have a main branch in your repository.
 
 <div class="steps" markdown>
 
@@ -227,9 +227,9 @@ Learn more about working with branches in this blog post: [Workflows for Git bra
 
 ## Make a pull request
 
-When you are done working on a branch for e.g. a new feature, you will want to merge that code to a branch for an upcomming releas or the master branch. You do this by first making a pull request that will check your new code if there are any conflicts with the existing code and then merge them.
+When you are done working on a branch for e.g. a new feature, you will want to merge that code to a branch for an upcomming releas or the main branch. You do this by first making a pull request that will check your new code if there are any conflicts with the existing code and then merge them.
 
-These steps will assume that you have pushed a **feature** branch to GitHub and that you want to merge it with a branch called **1.0.0** that is the branch for an upcomming release that will later be merged with the **master** branch when it is complete.
+These steps will assume that you have pushed a **feature** branch to GitHub and that you want to merge it with a branch called **1.0.0** that is the branch for an upcomming release that will later be merged with the **main** branch when it is complete.
 
 <div class="steps" markdown>
 
@@ -247,7 +247,7 @@ These steps will assume that you have pushed a **feature** branch to GitHub and 
 
 	- **Title:** The title originates from the commit message but it can be changed to something appropriate. 
 		
-		If you merge an upcomming version to master, set the title to **Version 1.0.0**.
+		If you merge an upcomming version to main, set the title to **Version 1.0.0**.
 
 	- **Description:** Add a description of what your new code will accomplish or what you have fixed.
 
@@ -273,7 +273,7 @@ These steps will assume that you have pushed a **feature** branch to GitHub and 
 
 		![alt text](./images/github-2.png)
 
-	If you merge an upcomming version to master, set the title to **Version 1.0.0 (#123)**.
+	If you merge an upcomming version to main, set the title to **Version 1.0.0 (#123)**.
 
 1. Click on **Confirm merge**.
 
@@ -289,33 +289,52 @@ These steps will assume that you have pushed a **feature** branch to GitHub and 
 
 ## Reset your local environment after a pull request
 
-If you have created a feature branch from the master branch, pushed it to GitHub and then merged it with the master branch, your local master branch will be out of sync with the remote master branch since it does not contain the newly merged code from the feature branch.
+If you have created a feature branch from the main branch, pushed it to GitHub and then merged it with the main branch, your local main branch will be out of sync with the remote main branch since it does not contain the newly merged code from the feature branch.
 
 To resolve this we need to reset the local environment so that it matches the remote repository.
 
 <div class="steps" markdown>
 
-1. Checkout the master branch in your local project.
+1. Checkout the main branch in your local project.
 
 	```bash
-	git checkout master
+	git checkout main
 	```
 
-1. Pull the master branch from the remote repository.
+1. Pull the main branch from the remote repository.
 
 	```bash
-	git pull origin master
+	git pull origin main
 	```
 
 1. Reset the local branch
 
 	```bash
-	git reset --hard origin/master
+	git reset --hard origin/main
 	```
 
 	This step will reset the local staging area and rewrite the local branch's history to match the remote branch.
 
 </div>
+
+**Optional:** If your local environment still sees remote branches that are deleted, you can reset your local environment.
+
+<div class="steps" markdown>
+
+1. Check all branches.
+
+	```bash
+	git branch -a
+	```
+
+1. Prune the origin branches
+
+	```bash
+	git remote prune origin
+	```
+
+</div>
+
 
 !!! success "Your local repository is now up to date"
 
@@ -333,7 +352,7 @@ When you push a new version of your code and want to make it easliy available fo
 
 		![GitHub tag image](./images/github_tag-1.png)
 	
-	- **Target:** Select target as **master**. This will add the code that is in the master right now to the release as a zip-file. You can select a different branch if you for instance are making bug fixes for a legacy version that you keep in its own branch.
+	- **Target:** Select target as **main**. This will add the code that is in the main right now to the release as a zip-file. You can select a different branch if you for instance are making bug fixes for a legacy version that you keep in its own branch.
 
 	- **Title:** Make the title the same as the tag, but you can add a "version" prefix if you like (**Version 1.0.0**).
 	
